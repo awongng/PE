@@ -1,0 +1,30 @@
+#Script de compilation
+
+#Commande de simulation des test bench
+#vsim -L LIB_RTL LIB_BENCH.[name_tb]
+
+#Réinitialisatoin des librairies modelsim
+rm -rf ./LIB/LIB_RTL
+rm -rf ./LIB/LIB_BENCH
+
+vlib ./LIB/LIB_RTL
+vmap LIB_RTL ./LIB/LIB_RTL
+vlib ./LIB/LIB_BENCH
+vmap LIB_BENCH ./LIB/LIB_BENCH
+
+
+
+#Compilation des fichiers sources
+#vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/SRC_RTL/[name_source].sv
+
+#Compilation des test bench
+#vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/SRC_BENCH/[name_tb].sv
+
+
+
+
+
+#Rafraichissement des librairies dans Modelsim
+#Pour pouvoir utiliser les mêmes paramètres de simulation
+vcom -work ./LIB/LIB_RTL -refresh -force_refresh
+vcom -work ./LIB/LIB_BENCH -refresh -force_refresh
