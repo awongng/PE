@@ -18,10 +18,8 @@ module red_K (
    assign step3 = step2 * 3329;
    assign step4 = product-step3;
 
-   genvar 			  i;
-   for (i=0;i<13;i++) begin
-      //half_sub
-   end
+   //13-bit substractor
+  
    assign result = (borrow) ? (step4[11:0]) : step5;
 
 endmodule:red_K
