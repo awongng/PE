@@ -1,0 +1,7 @@
+/*
+!/SRC
+/SRC/*
+!SRC/SRC_RTL/
+!SRC/SRC_BENCH
+!*.sv
+!*.txt
