@@ -1,0 +1,1 @@
+source make.txt |grep --color=never -E "\-\-|Error|Warning|^ $" |grep --color=always -E '^|Errors: [1-9]'
