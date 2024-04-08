@@ -20,12 +20,13 @@ vmap LIB_BENCH ./LIB/LIB_BENCH
 echo " "
 echo "--- Compiling source files"
 
-vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/red_K.sv
 vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/half_sub.sv
 vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/mod_add.sv
 vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/mod_sub.sv
 vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/subtractor.sv
 vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/subtractor_n.sv
+vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/red_K.sv
+vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/red_D.sv
 vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/mod_mul.sv
 
 #Compilation des test bench
@@ -39,7 +40,7 @@ vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/mod_sub_tb
 vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/subtractor_tb.sv
 vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/subtractor_n_tb.sv
 vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/red_K_tb.sv
-
+vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/red_D_tb.sv
 
 #Rafraichissement des librairies dans Modelsim
 #Pour pouvoir utiliser les mêmes paramètres de simulation

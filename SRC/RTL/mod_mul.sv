@@ -7,7 +7,7 @@
 module mod_mul(
 	       input logic [22:0]  a_i, b_i,
 	       input logic 	   select_i, 
-	       output logic [22:0] c_i
+	       output logic [22:0] c_o
 	       );
    logic [45:0] 		   product_s;
    logic [11:0] 		   reduced_K;
