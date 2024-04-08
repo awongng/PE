@@ -13,9 +13,15 @@ module red_D_tb ();
 	);
 
 //stimuli generation
-   initial begin
-      product_i_s = 96745219;
-   end
+	initial begin
+		product_i_s = 838041;
+// expected 838041 0hc999
+		#5 product_i_s = 8380417;
+// expected 1
+		#5 product_i_s = 96745219;	
+// expected 4560632 0h4596f8
+
+	end
    
 
 endmodule : red_D_tb
