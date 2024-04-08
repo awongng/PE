@@ -1,3 +1,4 @@
+#!/bin/bash
 #Script de compilation
 
 #Commande de simulation des test bench
@@ -28,6 +29,7 @@ vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/subtractor_n.sv
 vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/red_K.sv
 vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/red_D.sv
 vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/mod_mul.sv
+vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/butterfly.sv
 
 #Compilation des test bench
 #vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/_tb.sv
@@ -42,6 +44,7 @@ vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/subtractor
 vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/red_K_tb.sv
 vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/red_D_tb.sv
 vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/mod_mul_tb.sv
+vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/butterfly_tb.sv
 
 #Rafraichissement des librairies dans Modelsim
 #Pour pouvoir utiliser les mêmes paramètres de simulation
