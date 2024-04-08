@@ -1,5 +1,5 @@
 //red_K.sv
-//Reduction de Barrett pour Kyber
+//Réduction de Barrett pour Kyber
 
 `timescale 1ns/1ps
 
@@ -15,7 +15,7 @@ module red_K (
 
    assign step1_s = product_i * 5039;
    assign step2_s = step1_s >> 24;
-   assign step3_s = step2_s * 3329;
+   assign step3_s = step2_s + (step2_s<<11) + (step2_s<<10) + (step2_s<<8);
    assign step4_s = product_i - step3_s;
 
    //13-bit subtractor

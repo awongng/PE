@@ -77,3 +77,15 @@ restart
 run
 run
 run
+restart
+restart -f
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.red_K_tb(fast)
+# Loading LIB_RTL.red_K(fast)
+# Loading LIB_RTL.subtractor_n(fast)
+# Loading LIB_RTL.half_sub(fast)
+# Loading LIB_RTL.subtractor(fast)
+run
+run
+run
