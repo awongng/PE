@@ -17,13 +17,13 @@ module half_sub_tb ();
 	);
 
 //stimuli generation
-	initial 
-		begin
-			a_i_s = 0;
-			b_i_s = 0;
-			#5 a_i_s = 1;
-			#5 b_i_s = 1;
-			#5 a_i_s = 0;
-		end
+   initial begin
+      a_i_s = 0;
+      forever #5 a_i_s = ~a_i_s;
+   end
+   initial begin
+      b_i_s = 0;
+      forever #10 b_i_s = ~b_i_s;
+   end
 
 endmodule : half_sub_tb

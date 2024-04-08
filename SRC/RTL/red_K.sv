@@ -8,9 +8,9 @@ module red_K (
 	      output logic [11:0] result_o
 	      );
    logic [35:0] 		  step1_s;
-   logic [11:0] 		  step2_s, step5_s;
+   logic [11:0] 		  step2_s;
    logic [22:0] 		  step3_s;
-   logic [12:0] 		  step4_s;
+   logic [12:0] 		  step4_s, step5_s;
    logic 			  borrow_s;
 
    assign step1_s = product_i * 5039;
@@ -20,6 +20,6 @@ module red_K (
 
    //13-bit subtractor
   
-   assign result_o = (borrow_s) ? (step4_s[11:0]) : step5_s;
+   assign result_o = (borrow_s) ? (step4_s[11:0]) : step5_s[11:0];
 
 endmodule:red_K
