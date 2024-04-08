@@ -22,8 +22,6 @@ vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/red_K_tb.s
 
 
 
-
-
 #Rafraichissement des librairies dans Modelsim
 #Pour pouvoir utiliser les mêmes paramètres de simulation
 vcom -work ./LIB/LIB_RTL -refresh -force_refresh
