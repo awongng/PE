@@ -19,7 +19,13 @@ module red_K (
    assign step4_s = product_i - step3_s;
 
    //13-bit subtractor
-  
+   subtractor_n #(.nb_bit(13)) DUT(
+				   .a_i(step4_s),
+				   .b_i(13'hD01),
+				   .borrow_o(borrow_s),
+				   .diff_o(step5_s)
+				   );
+    
    assign result_o = (borrow_s) ? (step4_s[11:0]) : step5_s[11:0];
 
 endmodule:red_K

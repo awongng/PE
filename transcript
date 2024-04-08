@@ -11,23 +11,69 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# vsim -L LIB_RTL LIB_BENCH.mod_sub_tb 
-# Start time: 16:26:26 on Apr 05,2024
+vsim -L LIB_RTL LIB_BENCH.half_sub_tb
+# vsim -L LIB_RTL LIB_BENCH.half_sub_tb 
+# Start time: 10:10:57 on Apr 08,2024
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading sv_std.std
-# Loading work.mod_sub_tb(fast)
-# Loading LIB_RTL.mod_sub(fast)
+# Loading work.half_sub_tb(fast)
+# Loading LIB_RTL.half_sub(fast)
+# Load canceled
+run
+# Load canceled
+run
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.half_sub_tb(fast)
+# Loading LIB_RTL.half_sub(fast)
+add wave -position insertpoint  \
+sim:/half_sub_tb/a_i_s
+add wave -position end  sim:/half_sub_tb/b_i_s
+add wave -position end  sim:/half_sub_tb/borrow_o_s
+add wave -position end  sim:/half_sub_tb/diff_o_s
+run
+run
+run
+run
+run
+run
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.half_sub_tb(fast)
+# Loading LIB_RTL.half_sub(fast)
+run
+# Causality operation skipped due to absence of debug database file
+quit -sim
+# End time: 10:14:42 on Apr 08,2024, Elapsed time: 0:03:45
+# Errors: 0, Warnings: 0
+vsim -L LIB_RTL LIB_BENCH.red_K_tb
+# vsim -L LIB_RTL LIB_BENCH.red_K_tb 
+# Start time: 10:36:41 on Apr 08,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.red_K_tb(fast)
+# Loading LIB_RTL.red_K(fast)
 # Loading LIB_RTL.subtractor_n(fast)
 # Loading LIB_RTL.half_sub(fast)
 # Loading LIB_RTL.subtractor(fast)
-add wave -position insertpoint  \
-sim:/mod_sub_tb/DUT/a_i \
-sim:/mod_sub_tb/DUT/b_i \
-sim:/mod_sub_tb/DUT/q_i \
-sim:/mod_sub_tb/DUT/c_o \
-sim:/mod_sub_tb/DUT/borrow_s \
-sim:/mod_sub_tb/DUT/c1_s \
-sim:/mod_sub_tb/DUT/c2_s
-run 20 ns
-# End time: 16:28:51 on Apr 05,2024, Elapsed time: 0:02:25
-# Errors: 0, Warnings: 0
+add wave -position end  sim:/red_K_tb/product_i_s
+add wave -position end  sim:/red_K_tb/result_o_s
+run
+run
+run
+add wave -position end  sim:/red_K_tb/DUT/step1_s
+add wave -position end  sim:/red_K_tb/DUT/step2_s
+add wave -position end  sim:/red_K_tb/DUT/step3_s
+add wave -position end  sim:/red_K_tb/DUT/step4_s
+add wave -position end  sim:/red_K_tb/DUT/step5_s
+add wave -position end  sim:/red_K_tb/DUT/borrow_s
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.red_K_tb(fast)
+# Loading LIB_RTL.red_K(fast)
+# Loading LIB_RTL.subtractor_n(fast)
+# Loading LIB_RTL.half_sub(fast)
+# Loading LIB_RTL.subtractor(fast)
+run
+run
+run
