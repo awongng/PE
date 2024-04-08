@@ -1,3 +1,4 @@
+#!/bin/bash
 #Script de compilation
 #source make.txt |grep --color -E'^|Errors: [1-9]'
 
@@ -26,7 +27,7 @@ vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/mod_add.sv
 vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/mod_sub.sv
 vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/subtractor.sv
 vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/subtractor_n.sv
-vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/red_K.sv
+vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/red_D.sv
 
 #Compilation des test bench
 #vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/_tb.sv
