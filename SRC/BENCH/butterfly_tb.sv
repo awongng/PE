@@ -4,9 +4,8 @@
 module butterfly_tb ();
 	logic [23:0] a_s;
 	logic [23:0] b_s;
-	logic [23:0] twiddle_s;
-	logic [22:0] q_s;
-	logic sel_mul_s;
+	logic [22:0] twiddle_s;
+	logic sel_red_s;
 	logic sel_butterfly_s;
 	logic [22:0] a_prime_s;
 	logic [22:0] b_prime_s;
@@ -14,9 +13,8 @@ module butterfly_tb ();
 	butterfly DUT (
 		.a_i(a_s),
 		.b_i(b_s),
-		.q_i(q_s),
 		.twiddle_i(twiddle_s),
-		.sel_mul_i(sel_mul_s),	
+		.sel_red_i(sel_red_s),	
 		.sel_butterfly_i(sel_butterfly_s),
 		.a_prime_o(a_prime_s),
 		.b_prime_o(b_prime_s)	
@@ -28,8 +26,7 @@ module butterfly_tb ();
 			a_s = 3210;
 			b_s = 19;
 			twiddle_s = 281;
-			q_s = 3329;
-			sel_mul_s = 0;
+			sel_red_s = 1;//Kyber
 			sel_butterfly_s = 0;
 
 			#100 a_s = 1891;
@@ -40,8 +37,7 @@ module butterfly_tb ();
 			#100 a_s = 8297430;
 			b_s = 7194;
 			twiddle_s = 400232;
-			q_s = 8380417;
-			sel_mul_s = 1;
+			sel_red_s = 0; //Dilithium
 			sel_butterfly_s = 0;
 
 			#100 a_s = 4702990;
