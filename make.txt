@@ -4,25 +4,33 @@
 #vsim -L LIB_RTL LIB_BENCH.[name_tb]
 
 #Réinitialisatoin des librairies modelsim
+echo "deleting libraries"
 rm -rf ./LIB/LIB_RTL
 rm -rf ./LIB/LIB_BENCH
 
+echo "creating libraries"
 vlib ./LIB/LIB_RTL
 vmap LIB_RTL ./LIB/LIB_RTL
 vlib ./LIB/LIB_BENCH
 vmap LIB_BENCH ./LIB/LIB_BENCH
 
 
-
 #Compilation des fichiers sources
+echo "compiling source files"
 vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/red_K.sv
 
 #Compilation des test bench
+echo "compiling test benches"
 vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/red_K_tb.sv
 
 
 
 #Rafraichissement des librairies dans Modelsim
 #Pour pouvoir utiliser les mêmes paramètres de simulation
+echo "refreshing libraries"
 vcom -work ./LIB/LIB_RTL -refresh -force_refresh
 vcom -work ./LIB/LIB_BENCH -refresh -force_refresh
+
+
+echo "Restart the simulation in modelsim to apply changes"
+echo "to launch a test bench, use {vsim -L LIB_RTL LIB_BENCH.[name_tb]}"
