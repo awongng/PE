@@ -1,5 +1,5 @@
 #Script de compilation
-#source make.txt |grp --color -E'^|Errors: [1-9]'
+#source make.txt |grep --color -E'^|Errors: [1-9]'
 
 #Commande de simulation des test bench
 #vsim -L LIB_RTL LIB_BENCH.[name_tb]
