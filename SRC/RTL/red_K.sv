@@ -26,6 +26,6 @@ module red_K (
 				   .diff_o(step5_s)
 				   );
     
-   assign result_o = (borrow_s) ? (step4_s[11:0]) : step5_s[11:0];
+   assign result_o = borrow_s ? step4_s[11:0] : step5_s[11:0];
 
 endmodule:red_K
