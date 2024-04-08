@@ -1,6 +1,7 @@
 //mod_mul.sv
 //c = a * b mod q
-// q is not an input of this module, as it depends solely on the Algorithm used
+// q n'est pas un signal car il dépend uniquement de l'algorithme
+//select : 1 si Kyber, 0 si Dilithium
 
 `timescale 1ns/1ps
 
@@ -24,6 +25,6 @@ module mod_mul(
 		     .result_o(reduced_D)
 		     );
    
-   assign c_o = select_i ? reduced_D : {11'b0,reduced_K};
+   assign c_o = select_i ? {11'b0,reduced_K} : reduced_D;
 
 endmodule:mod_mul

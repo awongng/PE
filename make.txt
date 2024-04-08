@@ -41,11 +41,14 @@ vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/subtractor
 vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/subtractor_n_tb.sv
 vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/red_K_tb.sv
 vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/red_D_tb.sv
+vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/mod_mul_tb.sv
 
 #Rafraichissement des librairies dans Modelsim
 #Pour pouvoir utiliser les mêmes paramètres de simulation
 echo " "
 echo "--- Refreshing libraries"
+vlog -work ./LIB/LIB_RTL -refresh -force_refresh
+vlog -work ./LIB/LIB_BENCH -refresh -force_refresh
 vcom -work ./LIB/LIB_RTL -refresh -force_refresh
 vcom -work ./LIB/LIB_BENCH -refresh -force_refresh
 
