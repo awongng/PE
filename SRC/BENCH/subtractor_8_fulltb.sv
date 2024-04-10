@@ -20,7 +20,7 @@ module subtractor_8_fulltb ();
 		.diff_o(diff_o_s)	
 	);
 
-	assign correct = (borrow_o_s === (a_i_s >= b_i_s)) && ((a_i_s < b_i_s) || (diff_o_s === (a_i_s - b_i_s)));
+	assign correct = (borrow_o_s === (a_i_s < b_i_s)) && ((a_i_s <= b_i_s) || (diff_o_s === (a_i_s - b_i_s)));
 
 //stimuli generation
 	initial begin
