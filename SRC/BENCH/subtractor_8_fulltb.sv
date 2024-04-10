@@ -3,7 +3,7 @@
 
 `timescale 1 ns/ 1 ps
 
-module subtractor_8_tb ();
+module subtractor_8_fulltb ();
 
 	logic [15:0] test_vector_s;
 	logic borrow_o_s;
@@ -26,4 +26,4 @@ module subtractor_8_tb ();
 		forever #1 test_vector_s = test_vector_s + 1;
 	end
 
-endmodule : subtractor_8_tb
+endmodule : subtractor_8_fulltb
