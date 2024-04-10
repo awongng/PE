@@ -1,5 +1,5 @@
 //red_K_fulltb.sv
-//test bench de la réduction de Barrett pour Kyber
+//test bench complet de la réduction de Barrett pour Kyber
 
 //Simuler 11082241ns (0 <= product_i_s < 3329²)
 
