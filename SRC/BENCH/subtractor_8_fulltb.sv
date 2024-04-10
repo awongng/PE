@@ -22,8 +22,8 @@ module subtractor_8_tb ();
 
 //stimuli generation
 	initial begin
-		a_i_s = 8'h0;
-		forever #1 a_i_s = a_i_s + 1;
+		test_vector_s = 16'h0;
+		forever #1 test_vector_s = test_vector_s + 1;
 	end
 
 endmodule : subtractor_8_tb
