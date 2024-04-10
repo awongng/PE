@@ -13,9 +13,9 @@ module red_D (
 	logic [23:0] step4_s, step5_s;
 	logic borrow_s;
 
-	assign step1_s = product_i * 8396807;
+	assign step1_s = (product_i << 23) + (product_i << 13) + (product_i << 3) - product_i;
 	assign step2_s = step1_s >> 46;
-	assign step3_s = step2_s * 8380417;
+	assign step3_s = (step2_s << 23) - (step2_s <<13) + step2_s;
 	assign step4_s = product_i - step3_s;
 
 //24-bit subtractor
