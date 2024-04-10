@@ -9,6 +9,7 @@ rm -rf ./LIB/LIB_RTL
 rm -rf ./LIB/LIB_BENCH
 
 echo "--- Creating libraries"
+mkdir -p LIB
 vlib ./LIB/LIB_RTL
 vmap LIB_RTL ./LIB/LIB_RTL
 vlib ./LIB/LIB_BENCH
