@@ -1,7 +1,7 @@
 `timescale 1 ns/ 1 ps
 
 //testbench half_sub
-module half_sub_tb ();
+module half_sub_fulltb ();
 
 	logic a_i_s;
 	logic b_i_s;
@@ -26,4 +26,4 @@ module half_sub_tb ();
       forever #10 b_i_s = ~b_i_s;
    end
 
-endmodule : half_sub_tb
+endmodule : half_sub_fulltb
