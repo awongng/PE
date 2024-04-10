@@ -54,7 +54,7 @@ echo "--- Refreshing libraries"
 echo "--- Refreshing LIB_RTL"
 vlog -work ./LIB/LIB_RTL -refresh -force_refresh
 vcom -work ./LIB/LIB_RTL -refresh -force_refresh
-echo "--- Refreshin LIB_BENCH"
+echo "--- Refreshing LIB_BENCH"
 vlog -work ./LIB/LIB_BENCH -refresh -force_refresh
 vcom -work ./LIB/LIB_BENCH -refresh -force_refresh
 
