@@ -12,3 +12,8 @@ Linux environment with Modelsim
 Initialize environment with ```source init.txt```
 Compile with ```source make.txt```
 Additional information for compilation and simulation available in ```make.txt```
+
+### Alternative compilation option
+
+For debugging purposes, using ```source clean_make.txt``` makes compilation less verbose.
+It using an alternative ```make2.txt``` file, use ```cp make.txt make2.txt``` to copy the default one.
