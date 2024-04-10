@@ -1,4 +1,4 @@
-#!/bin/bash
+#initialises environment with Modelsim
 
 source /etc/profile.d/modules.sh
 
