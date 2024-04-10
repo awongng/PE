@@ -1,6 +1,8 @@
 //subtractor_8_fulltb.sv
 //Test bench complet du soustracteur sur 8 bits
 
+//Simuler 65535ns = 2**16
+
 `timescale 1 ns/ 1 ps
 
 module subtractor_8_fulltb ();
