@@ -15,5 +15,5 @@ Additional information for compilation and simulation available in ```make.txt``
 
 ### Alternative compilation option
 
-For debugging purposes, using ```source clean_make.txt``` makes compilation less verbose.
-It using an alternative ```make2.txt``` file, use ```cp make.txt make2.txt``` to copy the default one.
+For faster debugging purposes, using ```source clean_make.txt``` makes compilation less verbose.
+It uses an alternative ```make2.txt``` file, which is not in the repository. Use ```cp make.txt make2.txt``` to copy the default one.
