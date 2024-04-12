@@ -54,12 +54,6 @@ vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/subtractor
 vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/subtractor_fulltb.sv
 vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/subtractor_n_simpletb.sv
 
-
-
-vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/red_k_fulltb.sv
-
-vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/subtractor_8_fulltb.sv
-
 #Rafraichissement des librairies dans Modelsim
 #Pour pouvoir utiliser les mêmes paramètres de simulation
 echo " "
