@@ -6,9 +6,11 @@ You may use other means of compiling and simulating SystemVerilog files, but may
 ## Compilation
 
 Verify that ```init.txt``` points to the right files.
-Initialize environment with ```source init.txt```
+Initialize environment with ```source init.txt```.
 
-Compile with ```source make.txt```
+Compile with ```source make.txt```.
+
+With this script, Modelsim refreshes libraries at the end of compilation so that you do not need to do so manually (the change may not be visible in the library dropdown but will be effective).
 
 ### Alternative compilation option
 
