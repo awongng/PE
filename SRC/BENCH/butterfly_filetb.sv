@@ -34,10 +34,7 @@ module butterfly_filetb ();
 			fd = $fopen("./TestBenchFiles/butterfly_test_val.txt", "r");
 			while ($fscanf(fd, "%d %d %d %d %d %d %d", a_i_s, b_i_s, twiddle_i_s, sel_red_i_s, sel_butterfly_i_s, a_o_ref_s, b_o_ref_s) == 7)
 			begin
-				
-				#5;	
-		
-
+				#1;
 			end
 			$fclose(fd);	
 		end
