@@ -17,7 +17,7 @@ module mod_add_randtb ();
 		.q_i(q_i_s),
 		.c_o(c_o_s)	
 	);
-    assign correct_s = (c_o_s === ((a_i_s + b_i_s) < q_i_s) ? (a_i_s + b_i_s) : (a_i_s + b_i_s - q_i_s));
+    assign correct_s = (c_o_s === ((a_i_s + b_i_s) < q_i_s) ? ((a_i_s + b_i_s) % 24'h800000) : ((a_i_s + b_i_s - q_i_s) % 24'h800000));
 
 //stimuli generation
 	initial begin
