@@ -1,7 +1,7 @@
 `timescale 1 ns/ 1 ps
 
 //testbench subtractor pour 24 bit
-module subtractor_n_simpletb ();
+module subtractor_24_randtb ();
 
 	logic [23:0] a_i_s;
 	logic [23:0] b_i_s;
@@ -30,4 +30,4 @@ module subtractor_n_simpletb ();
             end
 		end
 
-endmodule : subtractor_n_simpletb
+endmodule : subtractor_24_randtb
