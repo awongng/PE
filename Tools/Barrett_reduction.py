@@ -123,7 +123,7 @@ def mod_mul(a,b,select):
 
 
 
-mod_mul(int(sys.argv[1]),int(sys.argv[2]),sys.argv[3])
+mod_mul(sys.argv[1],sys.argv[2],sys.argv[3])
 #mod_mul(3745,1734,"Kyber")
 #mod_mul(183,2748,"Kyber")
 #mod_mul(1974,3218,"Kyber")
