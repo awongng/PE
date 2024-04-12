@@ -1,4 +1,5 @@
 #05/04/2024
+import sys
 
 def dec_to_hex(x):
     t = hex(x)
@@ -117,9 +118,12 @@ def mod_mul(a,b,select):
     else:
         print("Selection error")
 
+
+
+mod_mul(sys.argv[1],sys.argv[2],sys.argv[3])
 #mod_mul(3745,1734,"Kyber")
 #mod_mul(183,2748,"Kyber")
 #mod_mul(1974,3218,"Kyber")
-mod_mul(5736491,8327146,"Dilithium")
-mod_mul(4597194,8356396,"Dilithium")
-mod_mul(3147455,7744730,"Dilithium")
+#mod_mul(5736491,8327146,"Dilithium")
+#mod_mul(4597194,8356396,"Dilithium")
+#mod_mul(3147455,7744730,"Dilithium")
