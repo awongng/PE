@@ -11,8 +11,8 @@ module butterfly (
 	input logic [22:0] twiddle_i,
 	input logic sel_red_i, 
 	input logic sel_butterfly_i,
-	output logic [22:0] a_prime_o,
-	output logic [22:0] b_prime_o
+	output logic [22:0] a_out_o,
+	output logic [22:0] b_out_o
 	);
 //variables internes
 	logic [23:0] add_in_s, sub_in_s;
@@ -27,7 +27,7 @@ module butterfly (
 		.a_i(a_i),
 		.b_i(add_in_s),
 		.q_i(q_s),
-		.c_o(a_prime_o)	
+		.c_o(a_out_o)	
 		);
 
 	mod_sub mod_sub (
@@ -44,6 +44,6 @@ module butterfly (
 		.c_o(mul_out_s)	
 	);
 
-	assign b_prime_o = sel_butterfly_i?mul_out_s:sub_out_s;
+	assign b_out_o = sel_butterfly_i?mul_out_s:sub_out_s;
 
 endmodule : butterfly

@@ -7,8 +7,8 @@ module butterfly_tb ();
 	logic [22:0] twiddle_s;
 	logic sel_red_s;
 	logic sel_butterfly_s;
-	logic [22:0] a_prime_s;
-	logic [22:0] b_prime_s;
+	logic [22:0] a_out_s;
+	logic [22:0] b_out_s;
 //DUT
 	butterfly DUT (
 		.a_i(a_s),
@@ -16,8 +16,8 @@ module butterfly_tb ();
 		.twiddle_i(twiddle_s),
 		.sel_red_i(sel_red_s),	
 		.sel_butterfly_i(sel_butterfly_s),
-		.a_prime_o(a_prime_s),
-		.b_prime_o(b_prime_s)	
+		.a_out_o(a_out_s),
+		.b_out_o(b_out_s)	
 	);
 
 //stimuli generation
