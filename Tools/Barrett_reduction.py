@@ -91,7 +91,7 @@ def barrett_D(x):
 
 def mod_mul(a,b,select):
     """
-    select : "Kyber";"Dilithium"
+    select : "Kyber" ; "Dilithium"
     """
     print("\n\na: ",a)
     dec_to_hex(a)
