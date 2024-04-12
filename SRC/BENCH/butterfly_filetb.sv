@@ -4,7 +4,7 @@
 // a_i b_i twiddle_i sel_red_i sel_butterfly_i a_out_o b_out_o
 
 `timescale 1 ns/ 1 ps
-module butterfly_tb ();
+module butterfly_filetb ();
 	logic [23:0] a_s;
 	logic [23:0] b_s;
 	logic [22:0] twiddle_s;
@@ -42,4 +42,4 @@ module butterfly_tb ();
 			$fclose(fd);	
 		end
 
-endmodule : butterfly_tb
+endmodule : butterfly_filetb
