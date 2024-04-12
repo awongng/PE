@@ -21,9 +21,9 @@ module mod_add_randtb ();
 
 //stimuli generation
 	initial begin
-      a_i_s = 24'h0;
+      a_i_s = 24'h1;
       b_i_s = 24'h0;
-      q_i_s = 24'h0;
+      q_i_s = 24'h1;
       forever #1 begin
           q_i_s = $urandom();
 	      a_i_s = $urandom_range(q_i_s);
