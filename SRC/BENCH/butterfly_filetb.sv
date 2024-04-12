@@ -31,7 +31,7 @@ module butterfly_filetb ();
 	initial 
 		begin
 			int fd, a, b, w, r, but;
-			fd = $fopen("./Tools/TestBenchFiles/butterfly_test_val.txt", "r");
+			fd = $fopen("./TestBenchFiles/butterfly_test_val.txt", "r");
 			while ($fscanf(fd, "%d %d %d %d %d %d %d", a_s, b_s, twiddle_s, sel_red_s, sel_butterfly_s, a_out_ref_s, b_out_ref_s) == 7)
 			begin
 				
