@@ -5,18 +5,16 @@ Miteloudi, K., Bos, J., Bronchain, O., Fay, B., & Renes, J. (1970, January 1). P
 
 ## Requirements
 
-Linux environment with Modelsim
+A Linux environment with Modelsim is required to use the compilation and simulation parameters of this project.
+You may use other means of compiling and simulating SystemVerilog files, but may have to make your equivalents to ```init.txt``` and ```make.txt```.
 
 ## Usage
 
-Initialize environment with ```source init.txt```
-Compile with ```source make.txt```
-Additional information for compilation and simulation available in ```make.txt```
+Initialize environment with ```source init.txt```.
+Compile with ```source make.txt```.
+Simulate test benches with ```vsim -L LIB_RTL LIB_BENCH.name_of_testbench_module```.
 
-### Alternative compilation option
-
-For faster debugging purposes, using ```source clean_make.txt``` makes compilation less verbose.
-It uses an alternative ```make2.txt``` file, which is not in the repository. Use ```cp make.txt make2.txt``` to copy the default one.
+Additional information can be found in [Usage](./Docs/Usage.md) documentation.
 
 ## Documentation
 
