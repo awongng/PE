@@ -3,7 +3,7 @@
 
 `timescale 1ns/1ps
 
-module mod_sub_fulltb ();
+module mod_sub_randtb ();
    logic [23:0] a_i_s;
    logic [23:0] b_i_s;
    logic [22:0] q_i_s;
@@ -28,4 +28,4 @@ module mod_sub_fulltb ();
       end
    end
 
-endmodule:mod_sub_fulltb
+endmodule:mod_sub_randtb
