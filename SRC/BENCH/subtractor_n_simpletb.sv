@@ -1,7 +1,7 @@
 `timescale 1 ns/ 1 ps
 
 //testbench subtractor pour n bit
-module subtractor_n_tb ();
+module subtractor_n_simpletb ();
 
 //	logic [2:0] a_i_s;
 //	logic [2:0] b_i_s;
@@ -41,4 +41,4 @@ module subtractor_n_tb ();
 			
 		end
 
-endmodule : subtractor_n_tb
+endmodule : subtractor_n_simpletb

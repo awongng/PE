@@ -1,7 +1,7 @@
 `timescale 1 ns/ 1 ps
 
 //testbench subtractor
-module subtractor_tb ();
+module subtractor_fulltb ();
 
 	logic a_i_s;
 	logic b_i_s;
@@ -33,4 +33,4 @@ module subtractor_tb ();
 			#5 a_i_s = 0;
 		end
 
-endmodule : subtractor_tb
+endmodule : subtractor_fulltb

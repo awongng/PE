@@ -5,7 +5,7 @@
 
 `timescale 1ns/1ps
 
-module red_D_fulltb();
+module red_D_randtb();
    logic [45:0] product_i_s;
    logic [22:0] result_o_s;
    logic 	correct_s;
@@ -18,8 +18,8 @@ module red_D_fulltb();
    assign correct_s = (result_o_s === (product_i_s % 8380417));
       
    initial begin
-      product_i_s = 46'h2D71F035BA3;
-      forever #1 product_i_s = ((product_i_s * 649731) % 46'd70231389093889);
+      product_i_s = 46'h0;
+      forever #1 product_i_s = $urandom();
    end
-   
-endmodule:red_D_fulltb
+
+endmodule:red_D_randtb

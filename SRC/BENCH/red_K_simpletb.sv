@@ -3,7 +3,7 @@
 
 `timescale 1ns/1ps
 
-module red_K_tb ();
+module red_K_simpletb ();
    logic [23:0] product_i_s;
    logic [11:0] result_o_s;
 
@@ -20,4 +20,4 @@ module red_K_tb ();
       #10 product_i_s = 24'h60EDCC;
 //expected result : d600,h258,b10 01011000
    end
-endmodule:red_K_tb
+endmodule:red_K_simpletb

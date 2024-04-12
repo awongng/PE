@@ -23,8 +23,8 @@ module mod_sub_randtb ();
       b_i_s = 24'h0;
       q_i_s = 24'h6D3410;
       forever #1 begin
-	 a_i_s = $urandom();
-	 b_i_s = $urandom();
+	      a_i_s = $urandom();
+	      b_i_s = $urandom();
       end
    end
 

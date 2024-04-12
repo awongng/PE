@@ -1,7 +1,7 @@
 //testbench butterfly
 
 `timescale 1 ns/ 1 ps
-module butterfly_tb ();
+module butterfly_simpletb ();
 	logic [23:0] a_s;
 	logic [23:0] b_s;
 	logic [22:0] twiddle_s;
@@ -46,4 +46,4 @@ module butterfly_tb ();
 
 		end
 
-endmodule : butterfly_tb
+endmodule : butterfly_simpletb

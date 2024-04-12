@@ -3,7 +3,7 @@
 
 `timescale 1ns/1ps
 
-module mod_mul_tb();
+module mod_mul_simpletb();
    logic [22:0] a_i_s, b_i_s, c_o_s;
    logic 	select_i_s;
 
@@ -41,4 +41,4 @@ module mod_mul_tb();
       b_i_s = 23'h762CDA;
 //expected result : d3190914,h30B082
    end
-endmodule:mod_mul_tb
+endmodule:mod_mul_simpletb
