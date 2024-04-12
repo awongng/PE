@@ -17,3 +17,11 @@ Additional information for compilation and simulation available in ```make.txt``
 
 For faster debugging purposes, using ```source clean_make.txt``` makes compilation less verbose.
 It uses an alternative ```make2.txt``` file, which is not in the repository. Use ```cp make.txt make2.txt``` to copy the default one.
+
+## Documentation
+
+Additionnal documentation can be found in the [Docs](./Docs/) folder.
+
+* [Implementation](./Docs/Implementation.md) : How the work is implemented and notes for developpers
+* [Usage](./Docs/Usage.md) : How to use the existing work
+* [Security of the implementation](./Docs/Security.md) : Considerations on the security of the work, vulnerabilities and counter-measures
