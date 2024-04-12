@@ -7,9 +7,9 @@
 module butterfly_filetb ();
 	logic [23:0] a_i_s;
 	logic [23:0] b_i_s;
-	logic [22:0] twiddle_s;
-	logic sel_red_s;
-	logic sel_butterfly_s;
+	logic [22:0] twiddle_i_s;
+	logic sel_red_i_s;
+	logic sel_butterfly_i_s;
 	logic [22:0] a_o_s;
 	logic [22:0] b_o_s;
 //DUT
