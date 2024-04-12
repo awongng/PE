@@ -21,10 +21,11 @@ module mod_sub_randtb ();
    initial begin
       a_i_s = 24'h0;
       b_i_s = 24'h0;
-      q_i_s = 24'h6D3410;
+      q_i_s = 24'h0;
       forever #1 begin
 	      a_i_s = $urandom();
 	      b_i_s = $urandom();
+         q_i_s = $urandom();
       end
    end
 

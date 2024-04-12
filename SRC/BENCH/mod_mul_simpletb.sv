@@ -1,4 +1,4 @@
-//mod_mul_tb.sv
+//mod_mul_simpletb.sv
 //test bench de la multiplication modulaire
 
 `timescale 1ns/1ps
