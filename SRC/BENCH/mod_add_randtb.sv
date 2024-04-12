@@ -25,9 +25,9 @@ module mod_add_randtb ();
       b_i_s = 24'h0;
       q_i_s = 24'h0;
       forever #1 begin
-	      a_i_s = $urandom();
-	      b_i_s = $urandom();
           q_i_s = $urandom();
+	      a_i_s = $urandom_range(q_i_s);
+	      b_i_s = $urandom_range(q_i_s);
       end
 		end
 

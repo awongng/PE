@@ -94,6 +94,9 @@ def mod_mul(a,b,select):
     """
     select : "Kyber" ; "Dilithium"
     """
+    if(select=="Kyber"):
+        a = a % (2**12)
+        b = b % (2**12)
     print("\n\na: ",a)
     dec_to_hex(a)
     dec_to_bin(a)
