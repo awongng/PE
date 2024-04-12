@@ -1,9 +1,9 @@
-//red_K.sv
+//red_k.sv
 //Réduction de Barrett pour Kyber
 
 `timescale 1ns/1ps
 
-module red_K (
+module red_k (
 	      input logic [23:0]  product_i,
 	      output logic [11:0] result_o
 	      );
@@ -28,4 +28,4 @@ module red_K (
     
    assign result_o = borrow_s ? step4_s[11:0] : step5_s[11:0];
 
-endmodule:red_K
+endmodule:red_k

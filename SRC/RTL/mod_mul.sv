@@ -16,11 +16,11 @@ module mod_mul(
 
    assign product_s = a_i * b_i;
 
-   red_K reduction_K(
+   red_k reduction_K(
 		     .product_i(product_s[23:0]),
 		     .result_o(reduced_K)
 		     );
-   red_D reduction_D(
+   red_d reduction_D(
 		     .product_i(product_s),
 		     .result_o(reduced_D)
 		     );

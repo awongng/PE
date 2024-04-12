@@ -3,7 +3,7 @@
 
 `timescale 1ns/1ps
 
-module red_D (
+module red_d (
 	input logic [45:0]  product_i,
 	output logic [22:0] result_o
 	);
@@ -28,4 +28,4 @@ module red_D (
   
 	assign result_o = (borrow_s) ? (step4_s[22:0]) : step5_s[22:0];
 
-endmodule:red_D
+endmodule:red_d

@@ -26,8 +26,8 @@ vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/subtractor.sv
 vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/subtractor_n.sv
 vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/mod_add.sv
 vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/mod_sub.sv
-vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/red_K.sv
-vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/red_D.sv
+vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/red_k.sv
+vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/red_d.sv
 vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/mod_mul.sv
 vlog -sv +acc -svinputport=net -work LIB_RTL ./SRC/RTL/butterfly.sv
 
@@ -42,17 +42,17 @@ vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/half_sub_f
 vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/mod_add_simpletb.sv
 vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/mod_mul_simpletb.sv
 vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/mod_sub_simpletb.sv
-vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/red_D_randtb.sv
-vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/red_D_simpletb.sv
-vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/red_K_fulltb.sv
-vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/red_K_simpletb.sv
+vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/red_d_randtb.sv
+vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/red_d_simpletb.sv
+vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/red_k_fulltb.sv
+vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/red_k_simpletb.sv
 vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/subtractor_8_fulltb.sv
 vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/subtractor_fulltb.sv
 vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/subtractor_n_simpletb.sv
 
 
 
-vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/red_K_fulltb.sv
+vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/red_k_fulltb.sv
 
 vlog -sv -L LIB_RTL +acc -svinputport=net -work LIB_BENCH ./SRC/BENCH/subtractor_8_fulltb.sv
 

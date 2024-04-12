@@ -1,13 +1,13 @@
-//red_K_tb.sv
+//red_k_tb.sv
 //test bench de la réduction de Barrett pour Kyber
 
 `timescale 1ns/1ps
 
-module red_K_simpletb ();
+module red_k_simpletb ();
    logic [23:0] product_i_s;
    logic [11:0] result_o_s;
 
-   red_K DUT(
+   red_k DUT(
 	     .product_i(product_i_s),
 	     .result_o(result_o_s)
 	     );
@@ -20,4 +20,4 @@ module red_K_simpletb ();
       #10 product_i_s = 24'h60EDCC;
 //expected result : d600,h258,b10 01011000
    end
-endmodule:red_K_simpletb
+endmodule:red_k_simpletb

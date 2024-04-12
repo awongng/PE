@@ -1,13 +1,13 @@
 `timescale 1 ns/ 1 ps
 
 //testbench reduction barrett dilithium
-module red_D_simpletb ();
+module red_d_simpletb ();
 
 	logic [45:0] product_i_s;
 	logic [22:0] result_o_s;
 
 //DUT
-	red_D DUT (
+	red_d DUT (
 		.product_i(product_i_s),
 		.result_o(result_o_s)
 	);
@@ -24,4 +24,4 @@ module red_D_simpletb ();
 	end
    
 
-endmodule : red_D_simpletb
+endmodule : red_d_simpletb
