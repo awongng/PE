@@ -6,18 +6,9 @@ for i in range(50):
     a = getrandbits(23) 
     b = getrandbits(23)
     
-    
-    
     #Modular multiplication for Kyber
     mod = 3329
     f.write(str(a%mod) + " " + str(b%mod) + " " + str(1) + " " + str(a*b %mod) + "\n")
-    
-  
-    
-    #print("a =", hex(a % mod), "\n")
-    #print("b*w =", hex(b*w % mod), "\n")
-    
-    
     
     #Modular multiplication for Dilithium
     mod = 8380417
