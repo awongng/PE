@@ -41,7 +41,6 @@ initial begin
     end
 end
 //For *_filetb.sv
-iletb.sv
 initial begin
     int fd;
     fd = $fopen("./TestBenchFiles/module_name_test_val.txt", "r");
