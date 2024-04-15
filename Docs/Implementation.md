@@ -11,6 +11,8 @@ File, module and signal names use ```snake_case_convention```:
 * Everything in lowercase
 * Words separated by an underscore
 
+All modules have dedicated test benches, with at least one of arbitrary size (on all possible values, random values, or values specified in a separate file)
+
 ### Filesystem and filename standards
 
 The project uses the following filesystem :
