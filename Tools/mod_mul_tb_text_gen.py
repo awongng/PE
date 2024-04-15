@@ -1,8 +1,9 @@
 from random import getrandbits
 path = "./TestBenchFiles/mod_mul_test_val.txt"
+number = 50 #generate 2 times as many lines
 
 f = open(path, "w")
-for i in range(50):
+for i in range(number):
     a = getrandbits(23) 
     b = getrandbits(23)
     

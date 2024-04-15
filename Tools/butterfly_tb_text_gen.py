@@ -1,8 +1,9 @@
 from random import getrandbits
 path = "./TestBenchFiles/butterfly_test_val.txt"
+number = 50 #generate 4 times as many lines
 
 f = open(path, "w")
-for i in range(50):
+for i in range(number):
     a = getrandbits(24) 
     b = getrandbits(24)
     w = getrandbits(23)
