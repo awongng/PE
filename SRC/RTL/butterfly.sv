@@ -32,7 +32,7 @@ module butterfly (
 		.c_o(a_o)	
 		);
 
-	mod_sub mod_sub (Modular subtraction
+	mod_sub mod_sub (//Modular subtraction
 		.a_i(a_i),
 		.b_i(sub_in_s),
 		.q_i(q_s),
