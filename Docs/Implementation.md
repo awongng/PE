@@ -35,3 +35,4 @@ The project uses the following filesystem :
   * Output signals suffix : ```*_o```
   * Internal signals suffix : ```*_s```
   * In testbenches : Signals wired on inputs or outputs of the device under test use the same name (including original suffix ```*_i``` or ```*_o```) with the suffix ```*_s``` added.
+* Indentation is not standardised in this project as it does not hinder the readability of the code
