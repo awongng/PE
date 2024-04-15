@@ -1,14 +1,15 @@
+//half_sub_fulltb.sv
+//Full test bench for a half subtractor
+
+//Run for 4 ns for all the cases
+
 `timescale 1 ns/ 1 ps
 
-//testbench half_sub
 module half_sub_fulltb ();
-
-	logic a_i_s;
-	logic b_i_s;
+	logic a_i_s, b_i_s;
 	logic borrow_o_s;
 	logic diff_o_s;
 
-//DUT
 	half_sub DUT (
 		.a_i(a_i_s),
 		.b_i(b_i_s),
@@ -16,14 +17,14 @@ module half_sub_fulltb ();
 		.diff_o(diff_o_s)	
 	);
 
-//stimuli generation
-   initial begin
-      a_i_s = 0;
-      forever #5 a_i_s = ~a_i_s;
-   end
-   initial begin
-      b_i_s = 0;
-      forever #10 b_i_s = ~b_i_s;
-   end
+//Stimuli generation
+initial begin
+	a_i_s = 0;
+	forever #1 a_i_s = ~a_i_s;
+end
+initial begin
+	b_i_s = 0;
+	forever #2 b_i_s = ~b_i_s;
+end
 
 endmodule : half_sub_fulltb

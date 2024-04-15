@@ -1,4 +1,5 @@
-//testbench barret reduction for dilithium
+//red_d_filetb.sv
+//Test bench for the Barret reduction for Dilithium using test values from a file
 //reading the test values from a .txt file
 //format for each line in the file :
 // product_i result_o
