@@ -1,6 +1,6 @@
 # Security considerations
 
-This custom ALU is designed to be used in cryptographic processes and as such, its security is important.
+This custom ALU is designed to be used in cryptographic processes, which makes security an important factor for its design.
 
 We will not discuss the security of the CRYSTALS-Kyber or CRYSTALS-Dilithium schemes themselves but only the security of their implementation.
 

@@ -2,6 +2,7 @@
 
 A linux environment with Modelsim is required to use the compilation and simulation parameters of this project.
 You may use other means of compiling and simulating SystemVerilog files, but may have to make your equivalents to ```init.txt``` and ```make.txt```.
+All documentation and tools assume all commands are run in a terminal in the project's root.
 
 ## Compilation
 

@@ -6,7 +6,10 @@ The goal of this implementation is to describe a custom ALU as defined in Mitelo
 
 ### General standards
 
-File, module and signal names use (```snake_case_convention```).
+File, module and signal names use ```snake_case_convention```:
+
+* Everything in lowercase
+* Words separated by an underscore
 
 ### Filesystem and filename standards
 
@@ -30,7 +33,7 @@ The project uses the following filesystem :
 
 * Templates are provided for both modules ([RTL_template.sv](../SRC/RTL/RTL_template.sv)) and test benches ([BENCH_template.sv](../SRC/BENCH/BENCH_template.sv))
   * Following the templates is not required, they are provided for indicative purposes only
-* Each ```*.sv``` file contains only one module, which has the same name as the file.
+* Each ```*.sv``` file contains only one module, which has the same name as the file
 * Signals :
   * Input signals suffix : ```*_i```
   * Output signals suffix : ```*_o```
