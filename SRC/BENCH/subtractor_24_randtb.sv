@@ -1,14 +1,16 @@
+//subtractor_24__randtb.sv
+//Test bench for a 24 bit subractor using random values
+
+//Run for as long as necessary
+
 `timescale 1 ns/ 1 ps
 
-//testbench subtractor pour 24 bit
 module subtractor_24_randtb ();
-
-	logic [23:0] a_i_s;
-	logic [23:0] b_i_s;
+	logic [23:0] a_i_s, b_i_s;
 	logic borrow_o_s;
 	logic [23:0] diff_o_s;
 
-    logic correct_s;
+	logic correct_s;
 
 	subtractor_n #(.nb_bit(24)) DUT (
 		.a_i(a_i_s),
@@ -19,15 +21,14 @@ module subtractor_24_randtb ();
 
     assign correct_s = (borrow_o_s === (a_i_s < b_i_s)) && ((a_i_s <= b_i_s) || (diff_o_s === (a_i_s - b_i_s)));
 
-//stimuli generation
-	initial 
-		begin
-			a_i_s = '0;
-			b_i_s = '0;
-            forever #1 begin
-                a_i_s = $urandom();
-                b_i_s = $urandom();
-            end
-		end
+//Stimuli generation
+initial begin
+	a_i_s = '0;
+	b_i_s = '0;
+    forever #1 begin
+        a_i_s = $urandom();
+        b_i_s = $urandom();
+    end
+end
 
 endmodule : subtractor_24_randtb

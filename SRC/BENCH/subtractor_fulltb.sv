@@ -1,15 +1,16 @@
+//subtractor_fulltb.sv
+//Full test bench subtractor 
+
+//Run for 8 ns
 `timescale 1 ns/ 1 ps
 
-//testbench subtractor
 module subtractor_fulltb ();
 
-	logic a_i_s;
-	logic b_i_s;
+	logic a_i_s, b_i_s;
 	logic c_i_s;
 	logic borrow_o_s;
 	logic diff_o_s;
 
-//DUT
 	subtractor DUT (
 		.a_i(a_i_s),
 		.b_i(b_i_s),
@@ -18,19 +19,18 @@ module subtractor_fulltb ();
 		.diff_o(diff_o_s)	
 	);
 
-//stimuli generation
-	initial 
-		begin
-			a_i_s = 0;
-			b_i_s = 0;
-			c_i_s = 0;
-			#5 a_i_s = 1;
-			#5 b_i_s = 1;
-			#5 a_i_s = 0;
-			#5 c_i_s = 1;
-			#5 a_i_s = 1;
-			#5 b_i_s = 0;
-			#5 a_i_s = 0;
-		end
+//Stimuli generation
+initial begin
+	a_i_s = 0;
+	forever #1 a_i_s = ~a_i_s;
+end
+initial begin
+	b_i_s = 0;
+	forever #2 b_i_s = ~b_i_s;
+end
+initial begin
+	c_i_s = 0;
+	forever #4 b_i_s = ~b_i_s;
+end
 
 endmodule : subtractor_fulltb
