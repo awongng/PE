@@ -4,6 +4,8 @@
 #vsim -L LIB_RTL LIB_BENCH.[name_tb]
 
 #Réinitialisatoin des librairies modelsim
+echo " "
+echo " "
 echo "--- Deleting libraries"
 rm -rf ./LIB/LIB_RTL
 rm -rf ./LIB/LIB_BENCH
