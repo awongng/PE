@@ -19,7 +19,7 @@ It uses an alternative ```make2.txt``` file, which is not in the repository. Use
 
 ## Simulation
 
-This implementation includes test benches for every module, found in [SRC/BENCH](../SRC/BENCH/). In order to simulate a test_bench, use ```vsim -L LIB_RTL LIB_BENCH.name_of_testbench_module```. Note that you should not include the ```.sv``` filename extension here.
+This implementation includes test benches for every module, found in [SRC/BENCH](../SRC/BENCH/). In order to simulate a test_bench, use ```vsim -L LIB_RTL LIB_BENCH.name_of_testbench_module```. Note that you should not include the ```.sv``` filename extension in this command.
 
 ### Random seed setting
 
