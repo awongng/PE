@@ -6,8 +6,7 @@
 
 //module subtractor pour n bit
 module subtractor_n #(parameter nb_bit = 1)(
-	input logic [nb_bit - 1: 0] a_i,
-	input logic [nb_bit - 1: 0] b_i,
+	input logic [nb_bit - 1: 0] a_i, b_i,
 	output logic borrow_o,
 	output logic [nb_bit - 1: 0] diff_o
 	);

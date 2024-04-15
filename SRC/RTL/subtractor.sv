@@ -5,15 +5,10 @@
 `timescale 1 ns/ 1 ps
 
 module subtractor (
-	input logic a_i,
-	input logic b_i,
-	input logic c_i,
-	output logic borrow_o,
-	output logic diff_o
+	input logic a_i, b_i, c_i,
+	output logic borrow_o, diff_o
 	);
-	logic diff_s;
-	logic borrow_hs1_s;
-	logic borrow_hs2_s;
+	logic diff_s, borrow_hs1_s, borrow_hs2_s;
 	
 	half_sub half_sub1 (
 		.a_i(a_i),
