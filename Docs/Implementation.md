@@ -13,10 +13,10 @@ File, module and signal names use (```snake_case_convention```).
 The project uses the following filesystem :
 
 * [SRC](../SRC/) : Source files
-  * [RTL](../SRC/RTL/) : Modules making the custom ALU
+  * [RTL](../SRC/RTL/) : Modules in the custom ALU
     * Each file corresponds to a single module
   * [BENCH](../SRC/BENCH/) : Premade test benches
-  File names do not exactly follow ```snake_case_convention``` here, the following suffixes ommit underscores :
+    File names do not exactly follow ```snake_case_convention``` here, the following suffixes ommit underscores :
     * ```*_simpletb.sv``` : Values are given in the file
     * ```*_fulltb.sv``` : All possible values are tested, see the file's description for details
     * ```*_randtb.sv``` : Values are random, see [Random seeding](./Usage.md) for more information
@@ -28,6 +28,7 @@ The project uses the following filesystem :
 
 ### SystemVerilog code standards
 
+* Templates are availible for both modules ([RTL_template.sv](../SRC/RTL/RTL_template.sv)) and test benches ([BENCH_template.sv](../SRC/BENCH/BENCH_template.sv))
 * Each ```*.sv``` file contains only one module, which has the same name as the file.
 * Signals :
   * Input signals suffix : ```*_i```
