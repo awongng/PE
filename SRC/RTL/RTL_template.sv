@@ -13,7 +13,7 @@ module module_name (
 
     assign internal_example_1_s = input_example_1_i + (input_example_2_i << 7);
 
-    sub_module sub_module_name ( //sub_module_name should be telling enough, but a short description of the submodule may well be added
+    sub_module sub_module_name (//short description of the submodule
         .sub_input_i(internal_example_1_s),
         .sub_output_o(internal_example_2_s[14:0])
     );
