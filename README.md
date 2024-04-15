@@ -8,6 +8,8 @@ Miteloudi, K., Bos, J., Bronchain, O., Fay, B., & Renes, J. (1970, January 1). P
 A Linux environment with Modelsim is required to use the compilation and simulation parameters of this project.
 You may use other means of compiling and simulating SystemVerilog files, but may have to make your equivalents to ```init.txt``` and ```make.txt```.
 
+This project was made on CentOS Linux 7 and with Modelsim 2020.4, but should be compatible with more recent distributions.
+
 ## Usage
 
 Initialize environment with ```source init.txt```.
