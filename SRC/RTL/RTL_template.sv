@@ -1,6 +1,8 @@
 //Name of file
 //Description of module behavior
 
+//Additional information
+
 `timescale 1ps/1ns
 
 module module_name (
