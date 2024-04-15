@@ -29,7 +29,7 @@ The project uses the following filesystem :
 ### SystemVerilog code standards
 
 * Templates are provided for both modules ([RTL_template.sv](../SRC/RTL/RTL_template.sv)) and test benches ([BENCH_template.sv](../SRC/BENCH/BENCH_template.sv))
-  * Following the templates is not required, they are provided for indicative purposes
+  * Following the templates is not required, they are provided for indicative purposes only
 * Each ```*.sv``` file contains only one module, which has the same name as the file.
 * Signals :
   * Input signals suffix : ```*_i```
