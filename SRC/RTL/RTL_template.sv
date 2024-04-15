@@ -9,7 +9,7 @@
 `timescale 1ps/1ns
 
 module module_name (
-    input logic [31:0] input_example_1_i;
+    input logic [31:0] input_example_1_i, input_example_3_i;
     input logic input_example_2_i
     output logic [15:0] output_example_o;
 );
@@ -23,6 +23,6 @@ module module_name (
         .sub_output_o(internal_example_2_s[14:0])
     );
 
-    assign output_example_o = internal_example_2_s + input_example_1_i[14:0];
+    assign output_example_o = internal_example_2_s + input_example_3_i[14:0];
 
 endmodule : module_name

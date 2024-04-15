@@ -7,7 +7,7 @@
 
 module module_name_suffixtb ();//suffixes are described in Implementation.md
     //List all of the module under test's I/Os, inputs then outputs
-    logic [31:0] input_example_1_i_s;
+    logic [31:0] input_example_1_i_s, input_example_3_i_s;
     logic input_example_2_i_s;
     logic [15:0] output_example_o_s;
     //Internal signals such as (when applicable)
@@ -17,6 +17,7 @@ module module_name_suffixtb ();//suffixes are described in Implementation.md
     module_name DUT (
         .input_example_1_i(input_example_1_i_s),
         .input_example_2_i(input_example_2_i_s),
+        .input_example_3_i(input_example_3_i_s),
         .output_example_o(output_example_o_s)
     );
 
@@ -27,9 +28,12 @@ module module_name_suffixtb ();//suffixes are described in Implementation.md
 initial begin
     input_example_1_i_s = 32'hFFFFFFFFFF;
     input_example_2_i_s = 0;
+    input_example_3_i_s = 8372;
     #1;
     input_example_1_i_s = 32'b1101001111110010101;
     input_example_2_i_s = ~input_example_2_i_s;
+    #1
+    input_example_3_i_s = 562348652;
 end
 //For *_randtb.sv
 initial begin
@@ -38,13 +42,14 @@ initial begin
     forever #1 begin
         input_example_1_i_s = $urandom_range(#max);//Random between 0 and #max, both included
         input_example_2_i_s = $urandom();//Unbound random
+        input_example_3_i_s = $urandom();
     end
 end
 //For *_filetb.sv
 initial begin
     int fd;
     fd = $fopen("./TestBenchFiles/module_name_test_val.txt", "r");
-	while ($fscanf(fd, "%d %d %d", input_example_1_i_s, input_example_2_i_s, output_example_o_s) == 3)
+	while ($fscanf(fd, "%d %d %d %d", input_example_1_i_s, input_example_2_i_s, input_example_3_i_s, output_example_o_s) == 3)
 	begin
 		#1;
 	end
