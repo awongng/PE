@@ -1,12 +1,12 @@
 # Test file formatting
 
 This document describes the format of files used in the test benches.
-The test values are stored [TestBenchFiles](../TestBenchFiles/) with the suffix ```*_test_val.txt```.
+The test values are stored in [TestBenchFiles](../TestBenchFiles/) with the suffix ```*_test_val.txt```.
 The python code in [Tools](../Tools/) was used to generate them.
 
 ## Format for each line
-Each line is comprised of random inputs and the expected outputs.
-Each value on a line is separated by a space.
+Each line is comprised of random input(s) and the expected output(s).
+The values on a line are separated by a space.
 
 * Barrett reduction for Dilithium (1 input, 1 output)
 	* ```product_i result_o```
