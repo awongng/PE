@@ -1,7 +1,11 @@
 //mod_mul.sv
-//c = a * b mod q
-// q n'est pas un signal car il dépend uniquement de l'algorithme
-//select : 1 si Kyber, 0 si Dilithium
+//Modular multiplication, using Barrett reduction algorithm
+//Computes c_o = a_i * b_i mod q
+
+//q is not a signal here bacuse it is constant for each algorithm, and is thus present only in the reductions
+//select_i
+//	0 : Dilithium
+//	1 : Kyber
 
 `timescale 1ns/1ps
 
@@ -16,11 +20,11 @@ module mod_mul(
 
    assign product_s = a_i * b_i;
 
-   red_k reduction_K(
+   red_k reduction_K(//Barrett reduction for Kyber algorithm
 		     .product_i(product_s[23:0]),
 		     .result_o(reduced_K)
 		     );
-   red_d reduction_D(
+   red_d reduction_D(//Barrett reduction for Dilithium algorithm
 		     .product_i(product_s),
 		     .result_o(reduced_D)
 		     );
