@@ -1,7 +1,7 @@
 //Name of file
 //Description of test bench
 
-//Additional information
+//Additional information (e.g. duration to simulate)
 
 `timescale 1ps/1ns
 
