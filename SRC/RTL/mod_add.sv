@@ -16,7 +16,7 @@ module mod_add (
 
 	subtractor_n #(.nb_bit(24)) subtractor(//24 bits subtractor
 		.a_i(c1_s),
-		.b_i({0, q_i}),
+		.b_i({1'b0, q_i}),
 		.borrow_o(borrow_s),
 		.diff_o(c2_s)	
 	);
