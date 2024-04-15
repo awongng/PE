@@ -32,7 +32,7 @@ initial begin
     #1;
 	input_example_1_i_s = 32'b1101001111110010101;
     input_example_2_i_s = ~input_example_2_i_s;
-    #1
+    #1;
     input_example_3_i_s = 562348652;
 end
 //For *_randtb.sv

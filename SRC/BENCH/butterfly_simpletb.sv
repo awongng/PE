@@ -17,8 +17,8 @@ module butterfly_simpletb ();
 		.twiddle_i(twiddle_s),
 		.sel_red_i(sel_red_s),	
 		.sel_butterfly_i(sel_butterfly_s),
-		.a_out_o(a_out_s),
-		.b_out_o(b_out_s)	
+		.a_o(a_out_s),
+		.b_o(b_out_s)	
 	);
 
 //Stimuli generation
@@ -35,14 +35,14 @@ initial begin
 	sel_butterfly_s = 1;
 
 	
-	#1 
+	#1;
 	a_s = 8297430;
 	b_s = 7194;
 	twiddle_s = 400232;
 	sel_red_s = 0; //Dilithium
 	sel_butterfly_s = 0;
 
-	#1 
+	#1;
 	a_s = 4702990;
 	b_s = 3511453;
 	sel_butterfly_s = 1;

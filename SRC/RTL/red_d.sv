@@ -21,7 +21,7 @@ module red_d (
 
 	subtractor_n #(.nb_bit(24)) DUT (//24 bits subtractor
 			.a_i(step4_s),
-			.b_i(8380417),
+			.b_i(24'd8380417),
 			.borrow_o(borrow_s),
 			.diff_o(step5_s)	
 		);

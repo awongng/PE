@@ -19,7 +19,7 @@ module mod_add (
 		.b_i({0, q_i}),
 		.borrow_o(borrow_s),
 		.diff_o(c2_s)	
-		);
+	);
 	
 	assign c_o = borrow_s?c1_s[22:0]:c2_s[22:0];
 
