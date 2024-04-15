@@ -1,7 +1,7 @@
 //mod_mul_randtb.sv
-//Test bench for the modular multiplication with random values
+//Test bench for the modular multiplication on random values
 
-//Run for as long as necessary
+//1 value is simulated every ns
 
 `timescale 1ns/1ps
 

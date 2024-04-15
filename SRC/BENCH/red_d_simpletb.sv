@@ -1,25 +1,25 @@
+//red_d_simpletb.sv
+//Test bench for the Barrett reduction for Dilithium on specified values
+
 `timescale 1 ns/ 1 ps
 
-//testbench reduction barrett dilithium
 module red_d_simpletb ();
-
 	logic [45:0] product_i_s;
 	logic [22:0] result_o_s;
 
-//DUT
 	red_d DUT (
 		.product_i(product_i_s),
 		.result_o(result_o_s)
 	);
 
-//stimuli generation
+//Stimuli generation
 	initial begin
 		product_i_s = 838041;
-// expected 838041 0hc999
+		//Expected result : d838041,hC999
 		#5 product_i_s = 8380418;
-// expected 1
+		//Expected result : d1,h1
 		#5 product_i_s = 96745219;	
-// expected 4560632 0h4596f8
+		//Expected result : d4560632,h4596F8
 
 	end
    

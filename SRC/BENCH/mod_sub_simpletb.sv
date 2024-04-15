@@ -1,5 +1,5 @@
 //mod_sub_simpletb.sv
-//Simple test bench for the modular subtraction for few values
+//Test bench for the modular subtraction on specified values
 
 //Run for 3 ns
 

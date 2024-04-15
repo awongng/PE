@@ -1,5 +1,5 @@
 //mod_add_simpletb.sv
-//Simple test bench for the modular addition with a few values
+//Test bench for the modular addition on specified values
 
 //Run for 3 ns
 
@@ -19,8 +19,8 @@ module mod_add_simpletb ();
 
 //Stimuli generation
 initial begin
-	a_i_s = '0;
-	b_i_s = '0;
+	a_i_s = 0;
+	b_i_s = 0;
 	q_i_s = 40;
 	#1;
  	a_i_s = 20;

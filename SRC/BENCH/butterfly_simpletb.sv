@@ -1,5 +1,5 @@
 //butterfly_simpletb.sv
-//Simple test bench for the Cooley-Tukey and Gentleman-Sande butterflies for a few values
+//Test bench for Cooley-Tukey and Gentleman-Sande butterflies on specified values
 
 //Run for 4 ns
 
@@ -21,7 +21,7 @@ module butterfly_simpletb ();
 		.b_out_o(b_out_s)	
 	);
 
-//stimuli generation
+//Stimuli generation
 initial begin
 	a_s = 3210;
 	b_s = 19;

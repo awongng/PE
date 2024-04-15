@@ -1,7 +1,8 @@
 //subtractor_fulltb.sv
-//Full test bench subtractor 
+//Test bench for subtractor on all possible values
 
 //Run for 8 ns
+
 `timescale 1 ns/ 1 ps
 
 module subtractor_fulltb ();

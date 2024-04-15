@@ -29,7 +29,7 @@ module butterfly_filetb ();
 
 	assign correct_s = (a_o_s === a_o_ref_s) && (b_o_s === b_o_ref_s);
 
-//stimuli generation	
+//Stimuli generation	
 initial begin
 	int fd;
 	fd = $fopen("./TestBenchFiles/butterfly_test_val.txt", "r");

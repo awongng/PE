@@ -1,5 +1,5 @@
 //half_sub_fulltb.sv
-//Full test bench for a half subtractor
+//Test bench for a half subtractor on all possible values
 
 //Run for 4 ns for all the cases
 

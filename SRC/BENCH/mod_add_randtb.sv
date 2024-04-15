@@ -1,7 +1,7 @@
 //mod_add_randtb.sv
-//Test bench for the modular addition with random values
+//Test bench for the modular addition on random values
 
-//Run for as long as necessary
+//1 value is simulated every ns
 
 `timescale 1 ns/ 1 ps
 

@@ -1,7 +1,7 @@
 //subtractor_24__randtb.sv
-//Test bench for a 24 bit subractor using random values
+//Test bench for a 24 bit subractor on random values
 
-//Run for as long as necessary
+//1 value is simulated every ns
 
 `timescale 1 ns/ 1 ps
 

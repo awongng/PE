@@ -1,5 +1,5 @@
 //mod_mul_simpletb.sv
-//Simple test bench for the modular multiplication for a few values
+//Test bench for the modular multiplication on specified values
 
 //Run for 6 ns
 

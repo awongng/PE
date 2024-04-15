@@ -1,5 +1,5 @@
 //subtractor_8_fulltb.sv
-//Full test bench for an 8 bit subtractor
+//Test bench for an 8 bit subtractor on all possible values
 
 //Run for 65535 ns = 2**16
 
