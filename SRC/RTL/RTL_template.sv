@@ -1,5 +1,5 @@
 //Name of file
-//Description of module behavior
+//Description of module and its behavior
 
 //Additional information
 
