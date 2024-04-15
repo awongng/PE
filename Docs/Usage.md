@@ -23,7 +23,7 @@ This implementation includes test benches for every module, found in [SRC/BENCH]
 
 ### Random seed setting
 
-Some test benches use verilog's built-in ```$urandom()``` function.
+Some test benches use verilog's built-in ```$urandom()``` or ```$urandom_range()``` functions.
 Setting the seed should be done at run time with the following argument added to the ```vsim``` command : ```-sv_seed VALUE```, where VALUE is an integer or ```random```
 
 Note that when using ```-sv_seed random```, the seed is printed on your terminal so that you may use it later to reproduce observed behavior.
