@@ -11,13 +11,3 @@ No tests have been conducted yet
 ## Attacks studied and results
 
 No attacks have been tried yet
-
-### Attack1
-
-Currently a placeholder
-
-#### Methodology
-
-#### Results
-
-#### Countermeasure
