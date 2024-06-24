@@ -12,7 +12,7 @@ This project was made on CentOS Linux 7, with Modelsim 2020.4 and Python 3.11.5,
 
 ## Usage
 
-Initialize environment with ```source init.txt```.
+Initialize the environment with ```source init.txt```.
 Compile with ```source make.txt```.
 Simulate test benches with ```vsim -L LIB_RTL LIB_BENCH.name_of_testbench_module```.
 
@@ -20,8 +20,8 @@ Additional information can be found in [Usage](./Docs/Usage.md) documentation.
 
 ## Documentation
 
-Additionnal documentation can be found in the [Docs](./Docs/) folder.
+Additional documentation can be found in the [Docs](./Docs/) folder.
 
-* [Implementation](./Docs/Implementation.md) : How the work is implemented and notes for developpers
+* [Implementation](./Docs/Implementation.md) : How the work is implemented and notes for developers
 * [Usage](./Docs/Usage.md) : How to use the existing work
 * [Security of the implementation](./Docs/Security.md) : Considerations on the security of the work, vulnerabilities and counter-measures
